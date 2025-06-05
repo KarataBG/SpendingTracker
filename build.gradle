@@ -24,15 +24,18 @@ ext {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+
+	implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.49.1.0'
+	implementation group: 'org.hibernate', name: 'hibernate-core', version: '7.0.0.Final'
+	implementation group: 'org.hibernate', name: 'hibernate-community-dialects', version: '7.0.0.Final'
+
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.ai:spring-ai-advisors-vector-store'
-	implementation 'org.springframework.ai:spring-ai-starter-model-mistral-ai'
-	implementation 'org.springframework.ai:spring-ai-starter-vector-store-elasticsearch'
+//	implementation 'org.springframework.ai:spring-ai-advisors-vector-store'
+//	implementation 'org.springframework.ai:spring-ai-starter-model-mistral-ai'
+//	implementation 'org.springframework.ai:spring-ai-starter-vector-store-elasticsearch'
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
