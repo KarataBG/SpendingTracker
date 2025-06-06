@@ -33,7 +33,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-//	implementation 'org.springframework.ai:spring-ai-advisors-vector-store'
+	implementation 'org.springframework.ai:spring-ai-advisors-vector-store'
 //	implementation 'org.springframework.ai:spring-ai-starter-model-mistral-ai'
 //	implementation 'org.springframework.ai:spring-ai-starter-vector-store-elasticsearch'
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
