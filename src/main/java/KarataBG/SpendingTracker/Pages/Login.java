@@ -1,12 +1,12 @@
-package KarataBG.SpendingTracker;
+package KarataBG.SpendingTracker.Pages;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class Index {
-    @GetMapping("/")
+public class Login {
+    @GetMapping("/login")
     public String home() {
-        return "index";
+        return "login.html";
     }
 }
