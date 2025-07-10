@@ -4,7 +4,12 @@
     <title>Register</title>
 </head>
 <body>
-<h1>Register</h1>
+<header>
+    <a href="/">
+        <button>Home Page</button>
+    </a>
+    <h1>Register</h1>
+</header>
 <form action="#" th:action="@{/register}" th:object="${registrationForm}" method="post">
     <label for="username">Username:</label>
     <input type="text" id="username" th:field="*{username}" required/><br/>

@@ -26,6 +26,6 @@ public class Register {
         user.setUsername(form.getUsername());
         user.setPassword(form.getPassword());
         userRepository.save(user);
-        return "redirect:/login";
+        return "/login";
     }
 }
